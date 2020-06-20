@@ -1,3 +1,4 @@
+ /*API Maungaji*/
 var url = "http://13.59.145.203:8000/v1/landing";
 
 $.get(url, function(res){
