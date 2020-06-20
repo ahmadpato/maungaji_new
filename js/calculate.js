@@ -1,4 +1,6 @@
- /*Online Calculate*/
+/*Online Calculate*/
+
+/*Personal Package*/
 function calculateAmount(val) {
     var tot_price_personnel     = val * 25000;
     var reverse                 = tot_price_personnel.toString().split('').reverse().join(''),
@@ -10,6 +12,7 @@ function calculateAmount(val) {
     divobj.value = 'Rp. ' + ribuan;
 }
 
+/*Family Package*/
 function calculateAmountFamily(val) {
     var tot_price_family        = val * 50000;
     var reverse                 = tot_price_family.toString().split('').reverse().join(''),
@@ -21,7 +24,8 @@ function calculateAmountFamily(val) {
     divobj.value = 'Rp. ' + ribuan;
 }
 
- function calculateAmountGroup(val) {
+/*Group Package*/
+function calculateAmountGroup(val) {
     var tot_price_group         = val * 75000;
     var reverse                 = tot_price_group.toString().split('').reverse().join(''),
      ribuan                     = reverse.match(/\d{1,3}/g);
@@ -34,6 +38,8 @@ function calculateAmountFamily(val) {
  /*End Online Calculate*/
 
  /*Offline Calculate*/
+
+ /*Personal Package*/
  function calculateAmountOffline(val) {
     var tot_price_personnel_off = val * 100000;
     var reverse                 = tot_price_personnel_off.toString().split('').reverse().join(''),
@@ -45,6 +51,7 @@ function calculateAmountFamily(val) {
     divobj.value = 'Rp. ' + ribuan;
 }
 
+/*Family Package*/
 function calculateAmountFamilyOffline(val) {
     var tot_price_family_offline        = val * 125000;
     var reverse                         = tot_price_family_offline.toString().split('').reverse().join(''),
@@ -56,7 +63,8 @@ function calculateAmountFamilyOffline(val) {
     divobj.value = 'Rp. ' + ribuan;
 }
 
- function calculateAmountGroupOffline(val) {
+/*Group Package*/
+function calculateAmountGroupOffline(val) {
     var tot_price_group_offline         = val * 150000;
     var reverse                         = tot_price_group_offline.toString().split('').reverse().join(''),
      ribuan                             = reverse.match(/\d{1,3}/g);
