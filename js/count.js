@@ -5,10 +5,26 @@ $.get(url, function(res){
 	let data = res.data
 
 	$.each(data, function( key, value ) {
+	console.log(data)	
+	if(value.name == 'SANTRI'){
+	
+		document.getElementById("student").innerHTML	= value.name;
 
-	document.getElementById("meet").innerHTML	= value.name;
+		document.getElementById("count").innerHTML  	= value.count;
+	
+	} else if(value.name == 'GURU NGAJI'){
+	
+		document.getElementById("teacher").innerHTML	= value.name;
 
-	document.getElementById("count").innerHTML  = value.count;	
+		document.getElementById("teacherCount").innerHTML  	= value.count;	
+
+	} else{
+
+		document.getElementById("meet").innerHTML	= value.name;
+
+		document.getElementById("meetCount").innerHTML = value.count;
+
+	}
 
 	});
 });
