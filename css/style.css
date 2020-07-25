@@ -964,7 +964,7 @@ ul.social-list li:nth-child(3) a:hover {
 ============================================ */
 
 #testimonials {
-    background: #f4f4f4;
+    /* background: #f4f4f4; */
     padding-bottom: 45px;
     overflow: visible;
 }
