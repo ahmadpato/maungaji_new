@@ -294,11 +294,11 @@
     /* About 02 */
     /* Medium Content Box */
     .content-box-md {
-        padding: 80px 0;
+        padding-top: 15px !important;
     }
     .about-item {
-        padding: 55px 30px;
-        /* margin-bottom: 35px; */
+        padding-top: 15px !important;
+        padding-bottom: 0.1rem !important;
     }
     .about-item i {
         font-size: 30px;
