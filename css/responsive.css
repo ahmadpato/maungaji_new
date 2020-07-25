@@ -380,7 +380,7 @@
     }
     /* Testimonials */
     #testimonials {
-        padding-top: 15px;
+        padding-top: 0rem !important;
     }
     #testimonial-slider {
         top: 0;
