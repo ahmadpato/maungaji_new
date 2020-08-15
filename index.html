@@ -238,6 +238,23 @@
       .top-space-icon{
         padding-top:50px;
       }
+      .jdcolor {
+        color: #fff;
+      }
+      body {
+        height: 1600px;
+        }
+        .bottomMenu {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        border-top: 2px solid rgb(255, 253, 253);
+        background:#089ED1;
+        z-index: 1;
+        left:0;
+        }
     </style>
 </head>
 
@@ -1129,6 +1146,9 @@
         </li>
     </ul>
 </div>
+  <div class="bottomMenu jdcolor">
+    <p><h3 class="jdcolor"><a class="jdcolor" href="https://www.jd.id/product/maungaji-tahsin-online-personal-12x-meetings_610939596/610940180.html">Belajar Ngaji LEBIH UNTUNG Dengan Beli Voucher Ngaji Di JD.ID</a></h3></p>
+  </div>
   <div class="inner-center">
         <p>Copyright © 2020 PT Maungaji Teknologi Indonesia.&nbsp;<a href="">Privacy Policy</a></p>
   </div>
@@ -1181,6 +1201,17 @@
 <script type="text/javascript">
   $(function() {
   $('.selectpicker').selectpicker();
+});
+</script>
+
+<script>
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.bottomMenu').fadeIn();
+  } else {
+    $('.bottomMenu').fadeOut();
+  }
 });
 </script>
 
